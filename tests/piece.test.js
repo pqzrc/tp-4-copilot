@@ -1,5 +1,15 @@
 import { describe, it, expect } from 'vitest';
-import { rotate } from '../src/core/piece.js';
+import { PIECES, PIECE_NAMES, rotate } from '../src/core/piece.js';
+
+describe('PIECES', () => {
+  it('contient exactement les 7 tetrominos classiques', () => {
+    expect(Object.keys(PIECES).sort()).toEqual(['I', 'J', 'L', 'O', 'S', 'T', 'Z']);
+  });
+
+  it('expose PIECE_NAMES coherent avec PIECES', () => {
+    expect(PIECE_NAMES.sort()).toEqual(Object.keys(PIECES).sort());
+  });
+});
 
 describe('rotate', () => {
   it('fait pivoter une matrice 2x2 d un quart de tour horaire', () => {

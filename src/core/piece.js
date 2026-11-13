@@ -38,6 +38,8 @@ export const PIECES = {
   ],
 };
 
+export const PIECE_NAMES = Object.keys(PIECES);
+
 
 
 /** Fait tourner une matrice carré d'un quart de tour horaire. */
