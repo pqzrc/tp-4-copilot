@@ -1,0 +1,29 @@
+{
+  "name": "tp4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "vitest run"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pqzrc/tp-4-copilot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pqzrc/tp-4-copilot/issues"
+  },
+  "homepage": "https://github.com/pqzrc/tp-4-copilot#readme",
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  }
+}
+
