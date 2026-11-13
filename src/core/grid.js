@@ -7,7 +7,7 @@ export function createGrid(rows = ROWS, cols = COLS) {
   return Array.from({ length: rows }, () => Array(cols).fill(0));
 }
 
-// Vérifie qu'une pièce (matrice) à la position (row, col) ne sort pas de la
+// Vérifie qu'une pièce (matrice) à la position (ligne, colonne) ne sort pas de la
 // grille et ne chevauche aucune cellule occupée.
 export function isValidPosition(grid, matrix, row, col) {
   for (let r = 0; r < matrix.length; r++) {
@@ -16,7 +16,7 @@ export function isValidPosition(grid, matrix, row, col) {
       const gr = row + r;
       const gc = col + c;
       if (gc < 0 || gc >= grid[0].length || gr >= grid.length) return false;
-      if (gr < 0) continue; // autorise les cases au-dessus de la grille
+      if (gr < 0) continue; // Autorise les cases au-dessus de la grille.
       if (grid[gr][gc] !== 0) return false;
     }
   }
